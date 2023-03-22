@@ -1,5 +1,8 @@
 .footer {
+    display: flex;
+    justify-content: space-evenly;
     background-color: #bf7631;
+    height: 100px;
 }
 
 li a {
@@ -37,4 +40,58 @@ li {
 .headerline {
     border: 2px solid black;
     width: 90%;
+}
+
+.largeimage {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 650px;
+    background-image: linear-gradient(to right, black, transparent, black), url("Assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.whitepotplant {
+    display: flex;
+    width: 400px;
+}
+
+.whitepotcontainer {
+    display: flex;
+    justify-content: end;
+}
+
+.whitevaseplant {
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.productcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+
+   
+    
+}
+
+.productimage {
+    width: 300px;
+    height: 300px;
+}
+
+.productcard {
+    width: 300px;
+    padding: 50px;
+}
+
+.productrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
