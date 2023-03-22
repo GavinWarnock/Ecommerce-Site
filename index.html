@@ -9,32 +9,34 @@
     <title>Cara Cara</title>
 </head>
 <body>
-    <nav>
+    <div class="header">
         <ul>
             <li>
-                <a href="#">Home</a>
+                <a href="#Home">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="#About">About</a>
             </li>
             <li>
-                <a href="#">Products</a>
+                <a href="#Products">Products</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#Contact">Contact</a>
             </li>
         </ul>
-        <ul>
-            CARA
-        </ul>
-        <img src="Assets/icons8-pottery-96.png" alt="Small pot icon">
-        <ul>
-            CARA
-        </ul>
-        <ul>
-            CART (0)
-        </ul>
-    </nav>
+        <div class="headerlogo">
+        <h3 id="Home">CARA</h3>
+        <img class="headerimage" src="Assets/icons8-pottery-96.png" alt="Orange pot icon">
+        <h3>CARA</h3>
+        </div>
+        <div class="searchbar">
+            <input type="text">
+            <ul>
+                CART (0)
+            </ul>
+        </div>
+    </div>
+    <hr class="headerline">
     <br>
     <div>
         CERAMICS CRAFTED BY HAND...
@@ -43,11 +45,9 @@
     <div>
         ...FROM THE GROUND UP
     </div>
-    <header>
-    </header>
     <main>
         <section>
-            <p>ABOUT US</p>
+            <h1 id="About">ABOUT US</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
@@ -64,15 +64,15 @@
         </section>
         <br>
         <div>
-            <p>OUR PRODUCTS</p>
+            <h1 id="Products">OUR PRODUCTS</h1>
         </div>
         <br>
         <section>
             <img src="Assets/tom-crew-7HuTGlUfQSo-unsplash.jpg" alt="White bowls">
             <div>
-                <p>
+                <h2>
                     MUNDO BOWLS
-                </p>
+                </h2>
                 <p>
                     $48.00
                 </p>
@@ -90,9 +90,9 @@
         <section>
             <img src="Assets/oriento-maVIpNNtmlQ-unsplash.jpg" alt="Red Vase">
             <div>
-                <p>
+                <h2>
                     NATUREZA VASE
-                </p>
+                </h2>
                 <p>
                     $37.00
                 </p>
@@ -110,9 +110,9 @@
         <section>
             <img src="Assets/tom-crew-bgIO-u4GEfI-unsplash.jpg" alt="Bowls">
             <div>
-                <p>
+                <h2>
                     FEIRA BOWLS
-                </p>
+                </h2>
                 <p>
                     $29.00
                 </p>
@@ -130,9 +130,9 @@
         <section>
             <img src="Assets/tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="Two pots">
             <div>
-                <p>
+                <h2>
                     NATUREZA POTS
-                </p>
+                </h2>
                 <p>
                     $59.00
                 </p>
@@ -150,9 +150,9 @@
          <section>
             <img src="Assets/linh-le-a0rE64YJDA4-unsplash.jpg" alt="White vase with plant">
             <div>
-                <p>
+                <h2>
                     PEDRA VASE
-                </p>
+                </h2>
                 <p>
                     $31.00
                 </p>
@@ -170,9 +170,9 @@
          <section>
             <img src="Assets/tom-crew-oiZAQvxTcYQ-unsplash.jpg" alt="Three pots">
             <div>
-                <p>
+                <h2>
                     VIAJA POTS
-                </p>
+                </h2>
                 <p>
                     $57.00
                 </p>
@@ -190,9 +190,9 @@
          <section>
             <img src="Assets/tom-crew-YA2E3d7a9Wo-unsplash.jpg" alt="Plates">
             <div>
-                <p>
+                <h2>
                     SERVICO PLATES
-                </p>
+                </h2>
                 <p>
                     $35.00
                 </p>
@@ -210,9 +210,9 @@
          <section>
             <img src="Assets/oriento-l0ah3UBLppo-unsplash.jpg" alt="Tall blue vase">
             <div>
-                <p>
+                <h2>
                     CAMPEAO VASE
-                </p>
+                </h2>
                 <p>
                     $37.00
                 </p>
@@ -230,12 +230,12 @@
          <section>
             <img src="Assets/tom-crew-SITGdvztUdg-unsplash.jpg" alt="Four Bowls">
             <div>
-                <p>
+                <h2>
                     TROCA BOWLS
-                </p>
-                <P>
+                </h2>
+                <p>
                     $25.00
-                </P>
+                </p>
                 <br>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -248,11 +248,28 @@
             </div>
          </section>
          <br>
-         <div>
+         <h1 id="Contact">
             CONTACT US
-         </div>
+         </h1>
+            <form action="/action_page.php">
+                <label for="email">EMAIL:</label>
+                <input type="text" id="email" name="email">
+                <label for="message">MESSAGE:</label>
+                <input type="text" id="message" name="message">
+                <input type="submit" value="SEND">
+            </form>
+
     </main>
     <footer>
+        <div class="footer">
+            <img src="./Assets/icons8-youtube-96.png" alt="Youtube">
+            <img src="Assets/icons8-facebook-96 (1).png" alt="Facebook">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <h3>CARA<img src="Assets/icons8-pottery-96 (1).png" alt="White pot icon">CARA</h3>
+            <img src="Assets/icons8-twitter-96.png" alt="Twitter">
+            <img src="Assets/icons8-instagram-96.png" alt="Instagram">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
     </footer>
 </body>
 </html>

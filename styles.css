@@ -1,0 +1,40 @@
+.footer {
+    background-color: #bf7631;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: baseline;
+
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerimage {
+    height: 40px;
+}
+
+.headerlogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerline {
+    border: 2px solid black;
+    width: 90%;
+}
